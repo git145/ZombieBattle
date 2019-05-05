@@ -1,7 +1,7 @@
 # Written by MakeHuman 1.1.1
 version v1.1.1
 tags Sara
-camera 0.0 0.0 0.0 0.0 0.0 1.1625
+camera 0.0 0.0 0.0 0.0 0.0 1.0
 modifier torso/torso-vshape-decr|incr -0.130000
 modifier armslegs/l-hand-fingers-length-decr|incr -0.016000
 modifier nose/nose-flaring-decr|incr 0.016000
@@ -187,13 +187,15 @@ modifier armslegs/l-upperleg-scale-depth-decr|incr -0.258000
 modifier ears/r-ear-lobe-decr|incr 0.370000
 tongue tongue01 52ad91a3-caad-4e50-8c38-67634e5e789c
 teeth Teeth_Base 0a5ec82a-0d5f-43ce-a765-8f076f95692d
-proxy female_muscle_13442 20a78cb1-52c2-4bf5-87c7-96e2638b0135
 eyelashes Eyelashes01 d533836f-13ad-4836-8b65-051108253cd2
 skeleton game_engine.mhskel
 eyebrows eyebrow008 79ea307f-a942-40dd-bf50-bbaa41f02034
 eyes HighPolyEyes 2c12f43b-1303-432c-b7ce-d78346baf2e6
 clothes M_Trousers_01 8aea2217-32e9-4a71-a898-20fead85795b
+clothes shoes03 ad622a26-da1e-4e3c-9f8e-454edf10d504
 clothes CrudeFemaleTshirt cb623353-fb17-4101-8d7e-9998cfcd1c49
+clothes Pearl_Earrings b9021300-33c6-4502-9621-20abb95e36bf
+clothes mma_gloves 995c9193-db0b-42ea-83cc-92864ba0916d
 clothesHideFaces True
 skinMaterial skins/young_caucasian_female/young_caucasian_female2.mhmat
 material M_Trousers_01 8aea2217-32e9-4a71-a898-20fead85795b materials/m_trousers_01_camouflage.mhmat
