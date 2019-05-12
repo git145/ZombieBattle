@@ -1,7 +1,7 @@
 # Written by MakeHuman 1.1.1
 version v1.1.1
 tags Sara
-camera 11.0 20.5 0.0 0.0 0.0 1.1
+camera 0.0 0.0 0.0 0.0 0.0 1.1625
 modifier torso/torso-vshape-decr|incr -0.130000
 modifier armslegs/l-hand-fingers-length-decr|incr -0.016000
 modifier nose/nose-flaring-decr|incr 0.016000
@@ -191,6 +191,7 @@ eyelashes Eyelashes01 d533836f-13ad-4836-8b65-051108253cd2
 skeleton game_engine.mhskel
 eyebrows eyebrow008 79ea307f-a942-40dd-bf50-bbaa41f02034
 eyes HighPolyEyes 2c12f43b-1303-432c-b7ce-d78346baf2e6
+pose tpose.bvh
 clothesHideFaces True
 skinMaterial skins/young_caucasian_female/young_caucasian_female2.mhmat
 material HighPolyEyes 2c12f43b-1303-432c-b7ce-d78346baf2e6 eyes/materials/blue.mhmat
