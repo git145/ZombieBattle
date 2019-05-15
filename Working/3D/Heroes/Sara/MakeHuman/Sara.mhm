@@ -1,7 +1,7 @@
 # Written by MakeHuman 1.1.1
 version v1.1.1
 tags Sara
-camera 0.0 0.0 0.0 0.0 0.0 1.1625
+camera 0.0 0.0 0.0 0.0 0.0 1.0
 modifier torso/torso-vshape-decr|incr -0.130000
 modifier armslegs/l-hand-fingers-length-decr|incr -0.016000
 modifier nose/nose-flaring-decr|incr 0.016000
@@ -187,6 +187,7 @@ modifier armslegs/l-upperleg-scale-depth-decr|incr -0.258000
 modifier ears/r-ear-lobe-decr|incr 0.370000
 tongue tongue01 52ad91a3-caad-4e50-8c38-67634e5e789c
 teeth Teeth_Base 0a5ec82a-0d5f-43ce-a765-8f076f95692d
+proxy female1605 e7cb8171-845e-42b0-a109-e6e8c8a61f9d
 eyelashes Eyelashes01 d533836f-13ad-4836-8b65-051108253cd2
 skeleton game_engine.mhskel
 eyebrows eyebrow008 79ea307f-a942-40dd-bf50-bbaa41f02034
