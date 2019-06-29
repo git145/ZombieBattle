@@ -8,10 +8,6 @@ namespace ZombieBattle.Player
 
         public float _turnSpeed = 100f;
 
-        private Vector3 _movementDirection;
-
-        private Quaternion _turningDirection;
-
         private Rigidbody _rigidBody;
 
         void Awake ()
@@ -29,35 +25,32 @@ namespace ZombieBattle.Player
 
         void Move()
         {
-            SetMovementDirection();
-
-            UpdatePosition();
+            _rigidBody.MovePosition(GetMovementVector());
         }
 
-        private void SetMovementDirection()
+        private Vector3 GetMovementVector()
         {
-            _movementDirection = transform.forward * Input.GetAxis("Vertical") * _movementSpeed * Time.deltaTime;
+            return transform.position + GetMovementWalk() + GetMovementStrafe();
         }
 
-        private void UpdatePosition() {
-            _rigidBody.MovePosition(transform.position + _movementDirection);
+        private Vector3 GetMovementWalk()
+        {
+            return transform.forward * Input.GetAxis("Walk") * _movementSpeed * Time.deltaTime;
+        }
+
+        private Vector3 GetMovementStrafe()
+        {
+            return transform.right * Input.GetAxis("Strafe") * _movementSpeed * Time.deltaTime;
         }
 
         void Turn()
         {
-            SetTurningDirection();
-
-            UpdateRotation();
+            _rigidBody.MoveRotation(transform.rotation * GetTurningQuaternion());
         }
 
-        private void SetTurningDirection()
+        private Quaternion GetTurningQuaternion()
         {
-            _turningDirection = Quaternion.Euler(new Vector3(0, Input.GetAxis("Horizontal") * _turnSpeed * Time.deltaTime, 0));
-        }
-
-        private void UpdateRotation()
-        {
-            _rigidBody.MoveRotation(transform.rotation * _turningDirection);
+            return Quaternion.Euler(new Vector3(0, Input.GetAxis("Turn") * _turnSpeed * Time.deltaTime, 0));
         }
     }
 }
